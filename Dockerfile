@@ -10,6 +10,6 @@ RUN apt-get -qq update -y \
  && apt-get -qq purge -y \
  && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
-RUN pip3 install ansible
+RUN pip3 install ansible pyvbox
 
 WORKDIR /root
